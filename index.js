@@ -36,7 +36,7 @@ console.log(e); //true
 const r = true||false;
 console.log(r); // true
 
-//비교 연산자 값 비교시 ===을 사용 
+//비교 연산자 값 비교시 ===을 사용 /
 const t = 1;
 const y = 1;
 const ty = t === y;
