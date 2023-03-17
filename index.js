@@ -5,6 +5,9 @@ console.log(a); //1
 a = 2;
 console.log(a); //2
 
+a = 3;
+console.log(a); //3
+
 // 상수 한 번 선언하고 값이 바뀌지 않는 값 고정적.
 const b = 1;
 console.log(b); //1
