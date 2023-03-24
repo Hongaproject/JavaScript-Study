@@ -16,9 +16,18 @@ console.log(result2);
 
 //forEach
 const number3 = [1,2,3,4,5];
-number3.forEach(num => {
-    console.log(num);
-});
+const result3 = [];
+
+number3.forEach(num=>{
+    result3.push(num*num);
+})
+
+console.log(result3);
+
+// const number3 = [1,2,3,4,5];
+// number3.forEach(num => {
+//     console.log(num);
+// });
 
 
 //삼항 연산자 (if문)
