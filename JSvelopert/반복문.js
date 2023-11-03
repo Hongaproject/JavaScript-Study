@@ -1,6 +1,6 @@
 // for
-for(let i = 0; i < 10; i++){  // for(초기구문; 조건구문; 변화구문;)
-    console.log(i); // 0 ~ 9
+for(let i = 0; i < 10; i++){  // for(초기식; 조건식; 증감식;)
+    console.log(i); // 0 ~ 9 명령문
 }
 
 const names = ['강아지','고양이','짹쨱이'];
