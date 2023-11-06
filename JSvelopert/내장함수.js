@@ -86,10 +86,18 @@ console.log(concated); // 1 2 3 4 5 6
 console.log(a1 + "," + a2); // 1 2 3 4 5 6
 
 
+// const numbers0 = [1, 2, 3, 4, 5];
+
+// let sum = 0;
+// numbers0.map(n => {
+//   sum += n;
+// });
+// console.log(sum);
+
 const numbers0 = [1, 2, 3, 4, 5];
 
 let sum = 0;
-numbers0.map(n => {
+numbers0.forEach(n => {
   sum += n;
 });
 console.log(sum);

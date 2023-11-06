@@ -97,3 +97,6 @@ rl.on('close', function () {
     // 답
     // console.log('!@#$%^&*(\\\'"<>?:;')
 });
+
+
+// 알고리즘 입문편  Day 1

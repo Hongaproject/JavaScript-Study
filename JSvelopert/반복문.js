@@ -12,7 +12,7 @@ for(let a = 0; a < names.length; a++){
 //while
 // for과 while의 차이점 while은 특정 조건이 참이면 계속 돔 for은 특정 숫자를 가지고 반복을 돌림 
 
-let q = 0;
+let i = 0;
 while( i < 10){
     console.log(i);
     i++;
