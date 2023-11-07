@@ -29,7 +29,7 @@ const anotherAnimals = [...animals, '독수리'];
 console.log(animals);
 console.log(anotherAnimals);
 
-// rest
+// rest 객체, 배열, 그리고 함수의 파라미터에서 사용이 가능합니다.
 const purpleCuteSlime = {
     name: '슬라임',
     age: '23',
