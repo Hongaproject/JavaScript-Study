@@ -101,9 +101,21 @@ rl.on('close', function () {
 
 // 알고리즘 입문편  Day 1
 // 합
-
+function solution(num1, num2) {
+    var answer = num1 + num2;
+    return answer;
+}
 // 차
-
+const solution = (num1, num2) => num1 - num2    
 // 곱
-
+function solution(num1, num2) {
+    var answer = num1 * num2;
+    return answer;
+}
 // 몫
+function solution(num1, num2) {
+    // var answer = num1 / num2; // 정수로 나오니
+    var answer = Math.floor(num1 / num2);
+    return answer;
+    // return parseInt(num1 / num2) 값이 나오나 string값도 받을수있어 사용하지 말 것
+}
