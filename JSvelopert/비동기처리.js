@@ -8,10 +8,11 @@ const myPromise = new Promise((resolve, reject) => {
     // resolve로 성공을 호출 reject로 실패를 호출 
   })
 
-  const fetchData = async () => {
+  const fetchData = async () => { // async함수는 function 앞에 위치함, promise를 반환시킴.
     try{
         const apiKey = process.env.REACT_APP_NEWS_KEY;
-        const response =  await axios.get(`https://newsapi.org/v2/top-headlines?country=kr&apiKey=${apiKey}`);
+        // await를 만날시 프로미스가 이행될 때 까지 함수 실행이 일시 중지 된다. await는 async를 사용한 함수서만 사용 가능.
+        const response =  await axios.get(`https://newsapi.org/v2/top-headlines?country=kr&apiKey=${apiKey}`); 
         setArticles(response.data.articles);
         console.log(response);
     }
