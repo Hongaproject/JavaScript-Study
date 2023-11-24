@@ -164,6 +164,7 @@ rl.on('line', function (line) {
 }).on('close', function () {
     console.log(Number(input[0]) + Number(input[1]));
 
+
 });
 
 // 문자열 반복해서 출력하기
@@ -181,7 +182,7 @@ rl.on('line', function (line) {
 }).on('close', function () {
     str = input[0];
     n = Number(input[1]);
-    
+
 });
 
 // 대소문자 바꿔서 출력하기
