@@ -13,7 +13,7 @@ function solution(num1, num2) {
 // 입출력 예 #2  =>  9, -1, 0을 오름차순 정렬하면 -1, 0, 9이고 가장 중앙에 위치하는 값은 0입니다.
 function solution(array) {
     // 오름차수는 sort를 사용하면된다.
-    let a = array.sort((q,w) => q - w); 
+    let a = array.sort((q,w) => q - w); // w - q는 내림차수로 됨 
     let b = Math.floor(array.length / 2); // index값 가운데 값을 찾아줌.
 
     return a[b];
