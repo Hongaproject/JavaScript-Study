@@ -35,7 +35,7 @@ function solution(n) {
     var answer = [];
 
     for(let i = 1; i <= n; i++){
-        if(i % 2 != 0){
+        if(i % 2 != 0){ // 짝수인지 아닌지 판별
             answer.push(i);
         }
     }
@@ -80,7 +80,7 @@ function solution(my_string, overwrite_string, s) {
     const a = [...my_string]
     // ['H', 'e', '1', '1','o', 'W', 'o', 'r','1', 'd']
     // 문자열 my_string의 인덱스 s부터 overwrite_string의 길이만큼을 문자열 overwrite_string으로 바꿈
-    a.splice(s, overwrite_string.length, overwrite_string) 
+    a.splice(s, overwrite_string.length, overwrite_string)  // splice는 첫 번째 부분 시작, 두 번째는 삭제, 세 번째이후는 추가하는 내용을 담는다.
     // [ 'H', 'e', 'lloWorl', 'd' ]
     return a.join(''); // HelloWorld
 }
