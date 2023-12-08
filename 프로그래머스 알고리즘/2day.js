@@ -27,11 +27,10 @@ function solution(numer1, denom1, numer2, denom2) {
     let a = numer1 * denom2 + numer2 * denom1  //분자 10 , 29
     let b = denom1 * denom2  //분모 8 , 6
 
-    // 최소공약수 구하기 = 통분 
-    // a와 b가 나누어진다면 b가 최대 공약수이다.
+    // 최대공약수 구하기 = 통분 
     let c = (a,b) => (a % b === 0 ? b : c(b, a % b));
-
-    // 최소공약수를 분자 분모
+    
+    // 최소공배수 
     answer[0] = a / c(a, b);
     answer[1] = b / c(a, b);
 
