@@ -14,9 +14,9 @@ function solution(num1, num2) {
 function solution(array) {
     // 오름차수는 sort를 사용하면된다.
     let a = array.sort((q,w) => q - w); // w - q는 내림차수로 됨 
-    let b = Math.floor(array.length / 2); // index값 가운데 값을 찾아줌.
+    let b = Math.floor(array.length / 2); // index값 가운데 값을 찾아줌. 중앙값 찾음
 
-    return a[b];
+    return a[b]; // 배열안에 있는 중앙값을 보여주기 위해 사용
 }
 
 // 최빈값 구하기
@@ -25,10 +25,36 @@ function solution(array) {
 // 입출력 예 #1  =>  [1, 2, 3, 3, 3, 4]에서 1은 1개 2는 1개 3은 3개 4는 1개로 최빈값은 3입니다.
 function solution(array) {
     var answer = 0;
+    let setArr = [...new Set(array)] // set함수를 사용해 array 객체를 추려냄
+    let count = [] // filter를 사용하기 위해 사용함 각 요소가 몇 번 나왔는지 확인하는 배열
+    if(array.length == 1){ 
+        answer = array[0]  // 배열의 요소가 1개일 경우 자신이 최빈 값이라 작성
+    } else {
+        for(let i = 0; i < setArr.length; i++){ 
+			// 만들어 놓은 setArr를 다 따져야 해서 for문 사용 
+            count.push(array.filter(a => a == setArr[i]).length)
+			// setArr[i]와 일치하는 요소들로 이루어진 새로운 배열 생성
+			// [1], [2], [3,3,3], [4] 이런식으로 filter때문에 이렇게 나타남.
+			// 새롭게 생긴 배열 길이가 요소가 등장한 횟수이므로 length를 사용해서 넣어줌.
+        }
+			// 이 과정으로 인하여 array = [1,2,3,3,3,4]
+			// setArr = [1,2,3,4]
+			// count = [1,1,3,1]
+
+			// count 함수를 통해 비교하여 최빈값을 구하면 됨.
+        let max = Math.max(...count) // max를 이용해서 최빈값을 구할 수 있음
+        let check = count.filter(n => n == max) // 2개 이상이라면 -1를 리턴하기 위해 작성
+        if(check.length > 1){ // 그결과 값이 2개 이상이면 -1을
+            answer = -1
+        } else if(check.length == 1){ // 결과값이 1개 뿐이라면 최빈값을 나타냄.
+            answer = setArr[count.indexOf(max)]
+        }
+    }
+		// 최빈값은 setArr[count 배열의 최댓값]
     return answer;
-    // https://kinggh.tistory.com/12 참조
 }
 
+// https://kinggh.tistory.com/12 참조
 
 
 // 짝수는 싫어요
