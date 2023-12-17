@@ -1,4 +1,4 @@
-// 프로그래머스 알고리즘 입문 Day 4            정답
+// 프로그래머스 알고리즘 입문 Day 5          정답
 // 옷가게 할인 받기
 // 10만원 이상 5% 30이상 10% 50이상 20% 할인 
 // 소수점 이하를 버린 정수를 return 함.
@@ -6,6 +6,7 @@ function solution(price) {
     // 조건문으로 풀기
     if(price >= 500000){
         price *= 0.8
+        price - price * 0.2
     } else if(price >= 300000){
         price *= 0.9
     } else if(price >= 100000){
