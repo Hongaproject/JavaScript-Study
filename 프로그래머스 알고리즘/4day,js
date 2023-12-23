@@ -27,8 +27,8 @@ const solution = (numbers) => {
     let a = 0;
 
     for(let b = 0; b<numbers.length; b++){
-        a += numbers[b];
+        a += numbers[b]; // a부분에 b의 값을 넣어서 더해준다.
     }
 
-    return a / numbers.length;
+    return a / numbers.length; // 총값 / 갯수  평균값 제공
 }
