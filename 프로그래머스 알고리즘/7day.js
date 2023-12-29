@@ -43,3 +43,11 @@ function solution(n) {
     return answer
 }
 
+// 프로그래머스 알고리즘 입문 Day 7          문제
+// 특정 문자 제거하기
+
+// 각도기
+
+// 양꼬치
+
+// 짝수의 합
