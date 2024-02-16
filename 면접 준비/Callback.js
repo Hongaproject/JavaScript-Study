@@ -53,4 +53,24 @@ const w = (x) => {
 
 q(w); // q가 w를 실행시킨다. 
  
+// promise 
+const callAfter = () => {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve(new Date());
+        }, 1000)
+    })
+}
+
+const callB = (number, result) => {
+    console.log(number, result);
+}
+
+callAfter().then((result) => {
+    callB("1", result);
+    return callAfter(); 
+}).then((result) => {
+    callB("2", result);
+    return callAfter(); 
+})
 
