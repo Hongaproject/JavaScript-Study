@@ -23,7 +23,7 @@ https://khj93.tistory.com/entry/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-REST-API%EB
 // RestFul API
 // Rest의 원리를 따르는 시스템을 의미합니다. Rest API설계 규칙을 사용한 것을 RestFul API라고 합니다.
 
-// RestAPI
+// RestAPI 설계규칙
 // 소문자를 사용하여야 한다.
 // 마지막에 /(슬래시)를 포함하지 않는다.
 // 언더바 말고 하이픈을 사용한다. _말고 -
