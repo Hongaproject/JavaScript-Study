@@ -142,8 +142,11 @@ function isLocal() {
 // 실행 컨텍스트가 싱행이 되면 렉스컬 스코프를 파악을 한다.
 // 함수를 실행시 하위 함수 내에서 상위 함수의 스코프와 전역스코프까지 참조를 하는데 이것을 스코프체인을 통해 탐색 하는 것이다.
 // 자신이 속한 스코프에서부터 찾아보고, 그 스코프에 찾는 변수가 없으면 상위 스코프를 타고 올라가며 차례차례 찾아 나간다.
-
+// https://dev4self.tistory.com/21
 
 // https://doozi0316.tistory.com/entry/JavaScript-%EC%8B%A4%ED%96%89-%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80-JS-%EC%97%94%EC%A7%84-%EC%8A%A4%EC%BD%94%ED%94%84-%EC%B2%B4%EC%9D%B8
 // https://doozi0316.tistory.com/entry/JavaScript-Scope%EB%9E%80-%EC%8A%A4%EC%BD%94%ED%94%84-%EC%B2%B4%EC%9D%B8-%EC%8B%A4%ED%96%89-%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8
 
+// 스코프체이닝
+// 현재 스코프에서 식별자를 찾을때 상위스코프를 연쇄적으로 찾아나가는 방식
+// 변수를 참조할 때 스코프 체이닝을 통해 해당 변수를 참조하는 스코프부터 상위스코프 방향으로 이동하여 선언된 변수를 찾음.

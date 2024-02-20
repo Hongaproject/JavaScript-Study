@@ -16,3 +16,18 @@
 
 // 리액트 온클릭은 해당 요소에 클릭 이벤트를 걸어주는 이벤트 리스너입니다.
 // 클릭으로 이벤트를 실행시키면 브라우저가 온클릭에 등록된 함수에게 이벤트객체를 전달하면서 작동하는 원리입니다.
+
+// 이벤트 버블링, 캡처링을 차단하고 싶을때 e.stopPropagation을 사용하면 막을수 있고 해당 이벤트만 실행가능.
+
+e.stopPropagation()
+// 이벤트 버블링, 캡처링을 막을때 사용이 된다.
+
+e.preventDefault()
+// a태그 href속성을 사용한 코드서 e.preventDefault를 사용하면 고유 동작을 막아준다.
+// onSubmit 사용시 e.preventDefalut를 사용하면 reload를 막을수있다.
+
+// event.target
+// 부모로부터 이벤트가 발생되는 자식의 위치나, 내가 실행시킨 자식요소 반환
+
+// event.currentTarget
+// 이벤트가 부착된 부모의 위치를 반환
