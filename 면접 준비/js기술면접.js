@@ -1,8 +1,15 @@
+// https://hbsowo58.tistory.com/427 
+// https://velog.io/@dnr6054/fe-interview-JavaScript ㅉ;ㄴ
+
 // var, let, const
 
 // 호이스팅
 
 // 스코프
+
+// 스코프체이닝
+
+// 메서드체이닝
 
 // 클로저
 
@@ -23,6 +30,8 @@
 // 이벤트 캡처링
 
 // 이벤트 전파
+
+// e.stopPropagation, e.preventDefault
 
 // 깊은복사
 
