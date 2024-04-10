@@ -1,0 +1,71 @@
+// CS기초 내용추가
+
+브라우저 렌더링 과정
+
+주소창에 URL입력
+
+CORS란? 
+
+Rest API, Restful API
+
+GET, POST, PUT, PATCH
+
+Payload, header
+
+OAuth
+
+JWT?
+
+http, https 통신 차이
+
+LocalStrage, SessinStorage, Cookie
+
+SEO
+
+크로스브라우징
+
+사이트렌더링최적화
+
+DOM이란?
+
+객체지향프로그래밍 OOP
+
+프레임워크, 라이브러리
+
+DNS
+
+URI, URL
+
+Webpack, Babel, Polyfill
+
+MVC, MVVM
+
+시멘틱태그
+
+프로세스와 메소드
+
+NPM이란
+
+// DB기초 
+
+DDL
+
+DML
+
+DCL
+
+트리거
+
+index
+https://dev-coco.tistory.com/158
+https://hyonee.tistory.com/41
+
+정규화
+
+관계형 DB와 NoSQL 차이
+
+트랜잭션
+
+JOIN 종류
+
+DBMS, RDBMS
