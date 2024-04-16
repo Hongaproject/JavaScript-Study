@@ -4,10 +4,12 @@ MVC패턴으로 개발 및 MVC 내용 공부
 
 Flux패턴 공부
 
-연산자 할당, setTimeout
+setTimeout
 
 이벤트위임 해본적
 
 클로저 환경
 
 this
+
+promise try catch문
