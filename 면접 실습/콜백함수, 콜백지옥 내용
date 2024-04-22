@@ -69,7 +69,13 @@ function funcB() {
 
 funcA(funcB);  // 콜백 함수입니다. 
 
+// 위 코드에 제어권
 
+// 인자값 사용 -> map
+
+// this
+
+// 비동기통신 setTimeout
 
 
  
