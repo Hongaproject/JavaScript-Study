@@ -13,13 +13,42 @@
 promise를 간결하게 사용이 가능하고 사용시 코드 가독성과 유지보수에 도움이 됩니다.
 
 async는 함수 앞에 붙으며 async 함수로 만듭니다. async함수는 항상 promise를 반환합니다.
+await는 promise객체 앞에 붙여쓰며, 해당 promise가 처리될 때 까지 기다린 후 결과값을 반환 합니다. async함수 내부에서만 사용이 가능합니다.
 
-async function test() {
-    let res = await fetch();
-    let data = await res.json();
-    return data;
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-await는 promise객체 앞에 붙여쓰며, 해당 promise가 처리될 때 까지 기다린 후 결과값을 반환 합니다. async함수 내부에서만 사용이 가능합니다.
+async function process() {
+  console.log('안녕하세요!');
+  await sleep(1000); // 1초쉬고
+  console.log('반갑습니다!');
+}
+
+process();
+
+// try/catch
+async함수 안에서 예외처리를 할 때 사용된다.
+
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function makeError() {
+  await sleep(1000);
+  const error = new Error();
+  throw error;
+}
+
+async function process() {
+  try {
+    await makeError();
+  } catch (e) {
+    console.error(e);
+  }
+}
+
+process();
+
 
 
