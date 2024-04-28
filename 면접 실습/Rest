@@ -5,7 +5,17 @@
 // REST API
 // REST 기반으로 만들어진 API
 
+// 설계규칙 
+소문자를 사용하여야 한다. Apple X apple O
+마지막에 /(슬래시)를 포함하지 않는다.
+언더바 말고 하이픈을 사용한다. _말고 -
+파일확장자는 URI에 포함하지 않는다. .jpg 등
+행위를 표현하지 않는다. create-post X create O
+
 
 // RESTful API
 // REST 원리를 따르는 것을 뜻 함.
 
+// RESTful API가 아닌 경우
+// CRUD 기능을 모두 POST로 처리하는 API
+// URI규칙을 올바르게 지키지 않은 API
