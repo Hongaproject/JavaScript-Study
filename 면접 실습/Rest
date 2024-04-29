@@ -2,6 +2,21 @@
 // 자원을 이름으로 구분하여 해당 자원의 상태를 주고 받는 모든 것을 의미
 // HTTP URI를 통해 자원을 명시하고, HTTP Method를 통해 해당 자원에 CRUD Operation을 적용하는 것을 의미합니다.
 
+// 특징
+Server-Client(서버-클라이언트 구조)
+Stateless(무상태)
+Cacheable(캐시 처리 가능)
+Layered System(계층화)
+Uniform Interface(인터페이스 일관성)
+
+// 장단점
+HTTP 표준 프로토콜에 따르는 모든 플랫폼에서 사용이 가능
+HTTP 표준 프로토콜 인프라 그대로 사용해서  REST API 사용을 위한 별도의 인프라를 구축할 필요가 없음
+서버와 클라이언트의 역할을 명확하게 분리
+
+HTTP Method 형태가 제한적이다.
+표준이 존재하지 않습니다.
+
 // REST API
 // REST 기반으로 만들어진 API
 
