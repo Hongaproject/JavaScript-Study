@@ -1,0 +1,29 @@
+1. 객체 지향 프로그래밍
+
+2. 프레임워크, 라이브러리 차이
+
+3. DNS
+
+4. Webpack, Babel, Polyfill
+
+5. MVC
+
+6. NPM
+
+7. 브라우저 렌더링 방식
+
+8. 주소창에 웹 사이트 주소 입력
+
+9. CORS
+
+10. Rest API, Restful API
+
+11. HTTP, HTTPS
+
+12. localstorage, sessionstorage, cookie
+
+13. SEO 
+
+14. 크로스브라우징
+
+15. 시맨틱 태그

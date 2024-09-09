@@ -1,0 +1,31 @@
+1. 자바스크립트란? + 특징 + 비동기 
+
+2. 이벤트 루프 + 동작원리
+
+3. 호이스팅 + 사각지대(TDZ)
+
+4. 스코프, 스코프체인, 렉시컬스코프
+
+5. 클로저 
+
+6. 이벤트 버블링, 캡처링, 위임, 전파 + e.stopPropagation() + e.preventDefault()
+
+7. map, forEach
+
+8. this 
+
+9. 콜백함수, 콜백지옥
+
+10. 프로미스 + 3가지 상태 + Promise.all() + async/await + try/catch
+
+11. es6에 도입된 기능 
+
+12. 일반함수, 화살표함수
+
+13. ==, ===
+
+14. undefined, null, undeclared
+
+15. 깊은복사, 얕은복사
+
+16. 구조분해할당, spread, rest

@@ -1,0 +1,27 @@
+1. React 특징
+
+2. virtual DOM -> 브라우저 렌더링 설명 껴서 하기
+
+3. 라이프사이클
+
+4. 클래스와 함수 차이
+
+5. CSR, SSR, SPA 
+
+6. props, state의미
+
+7. React 상태변화 인지
+
+8. setState 사용이유
+
+9. props drilling
+
+10. 리액트 훅
+
+11. react.memo, useCallback, useMemo차이
+
+12. Redux란? 3대 원칙
+
+13. Flux패턴 
+
+14. 제어컴포넌트 비제어 컴포넌트
