@@ -1,10 +1,10 @@
-1. 객체 지향 프로그래밍
+1. 객체 지향 프로그래밍(OOP)
 
 2. 프레임워크, 라이브러리 차이
 
 3. DNS
 
-4. Webpack, Babel, Polyfill
+4. Webpack, Babel, Polyfill 
 
 5. MVC
 
@@ -24,6 +24,17 @@
 
 13. SEO 
 
-14. 크로스브라우징
+14. 크로스브라우징, 웹 표준, 웹 접근성
 
 15. 시맨틱 태그
+
+16. GET, POST
+
+17. URI, URL 
+
+18. TCP, 웹 소켓
+
+19. 스택, 큐
+
+20. JWT, Payload, Header 
+
