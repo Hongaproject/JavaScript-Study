@@ -5,5 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tutorial</title>
   </head>
-  <body></body>
+  <body>
+    <!-- 
+        코드구조
+        문, 세미 콜론, 주석
+    -->
+
+    <script>
+      alert(
+        "body부분에서 사용 가능합니다. 하지만 간단한 코드만 HTML에 직접 코딩합니다."
+        // 스크립트를 별도의 파일에 작성하면 브라우저가 스크립트를 다운받아 캐시(cache)에 저장하기 때문에, 성능상의 이점이 있습니다.
+        // 여러 페이지에서 동일한 스크립트를 사용하는 경우, 브라우저는 페이지가 바뀔 때마다 스크립트를 새로 다운받지 않고 캐시로부터 스크립트를 가져와 사용합니다. 스크립트 파일을 한 번만 다운받으면 되죠.
+        // 이를 통해 트래픽이 절약되고 웹 페이지의 실제 속도가 빨라집니다.
+      );
+    </script>
+    <script src="./script.js"></script>
+  </body>
 </html>
