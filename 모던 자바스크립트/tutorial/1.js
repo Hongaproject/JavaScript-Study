@@ -91,19 +91,48 @@ if (year < 2024) {
 
 let result = condition ? value1 : value2; // 삼항연산자
 
-let age = prompt('나이를 입력해주세요.', 18);
-let message = (age < 3) ? '아기야 안녕?' :
-  (age < 18) ? '안녕!' :
-  (age < 100) ? '환영합니다!' :
-  '나이가 아주 많으시거나, 나이가 아닌 값을 입력 하셨군요!';
-alert( message );
+let age = prompt("나이를 입력해주세요.", 18);
+let message =
+  age < 3
+    ? "아기야 안녕?"
+    : age < 18
+    ? "안녕!"
+    : age < 100
+    ? "환영합니다!"
+    : "나이가 아주 많으시거나, 나이가 아닌 값을 입력 하셨군요!";
+alert(message);
 
 if (age < 3) {
-    message = '아기야 안녕?';
-  } else if (age < 18) {
-    message = '안녕!';
-  } else if (age < 100) {
-    message = '환영합니다!';
-  } else {
-    message = '나이가 아주 많으시거나, 나이가 아닌 값을 입력 하셨군요!';
-  }
+  message = "아기야 안녕?";
+} else if (age < 18) {
+  message = "안녕!";
+} else if (age < 100) {
+  message = "환영합니다!";
+} else {
+  message = "나이가 아주 많으시거나, 나이가 아닌 값을 입력 하셨군요!";
+}
+
+// 논리연산자
+// ||(OR), &&(AND), !(NOT)
+alert(true || true); // true
+alert(false || true); // true
+alert(true || false); // true
+alert(false || false); // false
+
+alert(true && true); // true
+alert(false && true); // false
+alert(true && false); // false
+alert(false && false); // false
+
+alert(!true); // false
+alert(!0); // true
+
+// for문 while문
+for (let i = 0; i < 5; i++) alert(i);
+
+let i = 0;
+while (i < 3) {
+  // 0, 1, 2가 출력됩니다.
+  alert(i);
+  i++;
+}
