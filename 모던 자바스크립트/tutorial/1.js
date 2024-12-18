@@ -153,3 +153,44 @@ switch (a) {
   default:
     alert("어떤 값인지 파악이 되지 않습니다.");
 }
+
+// 함수
+function name(parameter1, parameter2, ...parameterN) {
+  // 함수 본문
+}
+
+// 지역변수
+function showMessage() {
+  let message = "안녕하세요!"; // 지역 변수
+
+  alert(message);
+}
+showMessage(); // 안녕하세요!
+
+alert(message); // ReferenceError: message is not defined (message는 함수 내 지역 변수이기 때문에 에러가 발생합니다.)
+
+// 외부변수
+let userName = "John";
+
+function showMessage() {
+  let message = "Hello, " + userName;
+  alert(message);
+}
+
+showMessage(); // Hello, John
+
+// 수정도 가능
+let userName = "John";
+
+function showMessage() {
+  userName = "Bob"; // (1) 외부 변수를 수정함
+
+  let message = "Hello, " + userName;
+  alert(message);
+}
+
+alert(userName); // 함수 호출 전이므로 John 이 출력됨
+
+showMessage();
+
+alert(userName); // 함수에 의해 Bob 으로 값이 바뀜
