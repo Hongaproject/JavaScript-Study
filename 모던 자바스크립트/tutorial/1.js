@@ -194,3 +194,26 @@ alert(userName); // 함수 호출 전이므로 John 이 출력됨
 showMessage();
 
 alert(userName); // 함수에 의해 Bob 으로 값이 바뀜
+
+// 매개변수
+function showMessage(from, text) {
+  // 인자: from, text
+  alert(from + ": " + text);
+}
+
+showMessage("Ann", "Hello!"); // Ann: Hello! (*)
+showMessage("Ann", "What's up?"); // Ann: What's up? (**)
+
+// 매개변수 기본값
+function showMessage(text) {
+  // ...
+
+  if (text === undefined) {
+    // 매개변수가 생략되었다면
+    text = "빈 문자열";
+  }
+
+  alert(text);
+}
+
+showMessage(); // 빈 문자열
