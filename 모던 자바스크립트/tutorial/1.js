@@ -224,3 +224,20 @@ showMessage(); // 빈 문자열
 // 코드를 읽는 사람은 함수 이름만 보고도 함수가 어떤 기능을 하는지 힌트를 얻을 수 있어야 합니다.
 
 // 함수표현식
+function sayHi() {
+  alert("Hello");
+}
+
+let sayHi = function () {
+  alert("Hello");
+};
+
+function sayHi() {
+  // (1) 함수 생성
+  alert("Hello");
+}
+
+let func = sayHi; // (2) 함수 복사
+
+func(); // Hello     // (3) 복사한 함수를 실행(정상적으로 실행됩니다)!
+sayHi(); // Hello    //     본래 함수도 정상적으로 실행됩니다.
