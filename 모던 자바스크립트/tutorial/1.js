@@ -275,3 +275,45 @@ ask(
     alert("취소 버튼을 누르셨습니다.");
   }
 );
+
+// 함수선언문, 함수표현식 차이점
+// 첫 번째는 문법
+// 함수 선언문
+function sum(a, b) {
+  return a + b;
+}
+// 함수 표현식
+let sum = function (a, b) {
+  return a + b;
+};
+
+// 함수 표현식은 실제 실행 흐름이 해당 함수에 도달했을 때 함수를 생성합니다. 따라서 실행 흐름이 함수에 도달했을 때부터 해당 함수를 사용할 수 있습니다.
+// 함수 선언문은 함수 선언문이 정의되기 전에도 호출할 수 있습니다.
+sayHi("John"); // Hello, John
+function sayHi(name) {
+  alert(`Hello, ${name}`);
+}
+
+sayHi("John"); // error!
+let sayHi = function (name) {
+  // (*) 마술은 일어나지 않습니다.
+  alert(`Hello, ${name}`);
+};
+
+// 세 번째 차이점은, 스코프입니다.
+// 엄격 모드에서 함수 선언문이 코드 블록 내에 위치하면 해당 함수는 블록 내 어디서든 접근할 수 있습니다. 하지만 블록 밖에서는 함수에 접근하지 못합니다.
+let age = prompt("나이를 알려주세요.", 18);
+
+// 조건에 따라 함수를 선언함
+if (age < 18) {
+  function welcome() {
+    alert("안녕!");
+  }
+} else {
+  function welcome() {
+    alert("안녕하세요!");
+  }
+}
+
+// 함수를 나중에 호출합니다.
+welcome(); // Error: welcome is not defined
