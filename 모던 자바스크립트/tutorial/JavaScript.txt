@@ -35,5 +35,7 @@
 - 자바스크립트로 '트랜스파일’할 수 있는 언어는 많습니다. 각 언어마다 고유한 기능을 제공하죠. 자바스크립트에 숙달한 뒤에 이 언어들을 살펴볼 것을 추천드립니다.
 
 25/01/06 - https://ko.javascript.info/ 1.1 ~ 2.4
-25/01/97 - https://ko.javascript.info/ 2.5 ~ 2.7
+25/01/07 - https://ko.javascript.info/ 2.5 ~ 2.7
+25/01/08 - https://ko.javascript.info/ 2.8 ~ 2.10
+25/01/09 - https://ko.javascript.info/ 2.11 ~ 2.12
 
