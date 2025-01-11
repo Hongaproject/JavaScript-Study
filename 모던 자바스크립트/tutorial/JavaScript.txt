@@ -38,4 +38,5 @@
 25/01/07 - https://ko.javascript.info/ 2.5 ~ 2.7
 25/01/08 - https://ko.javascript.info/ 2.8 ~ 2.10
 25/01/09 - https://ko.javascript.info/ 2.11 ~ 2.12
+25/01/09 - https://ko.javascript.info/ 2.13
 
